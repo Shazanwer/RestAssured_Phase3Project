@@ -1,5 +1,8 @@
 package apiChaining;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -59,15 +62,16 @@ public class EndToEndTest {
 	}
 
 	public Response PostMethod(String firstName, String lastName, String Salary, String email) {
-		JSONObject jobj = new JSONObject();
-		jobj.put("firstName", firstName);
-		jobj.put("lastName", lastName);
-		jobj.put("salary", Salary);
-		jobj.put("email", email);
+				
+		Map<String, Object> MapObj = new HashMap<String, Object>();
+		MapObj.put("firstName", firstName);
+		MapObj.put("lastName", lastName);
+		MapObj.put("salary", Salary);
+		MapObj.put("email", email);
 
 		RestAssured.baseURI = BaseURI;
 		RequestSpecification request = RestAssured.given();
-		Response response = request.contentType(ContentType.JSON).accept(ContentType.JSON).body(jobj.toString()).post();
+		Response response = request.contentType(ContentType.JSON).accept(ContentType.JSON).body(MapObj).post();
 		return response;
 	}
 
