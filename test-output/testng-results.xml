@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-05T07:10:22Z" name="Default suite" finished-at="2022-06-05T07:10:26Z" duration-ms="4241">
+  <suite started-at="2022-06-07T02:06:17Z" name="Default suite" finished-at="2022-06-07T02:06:23Z" duration-ms="5363">
     <groups>
     </groups>
-    <test started-at="2022-06-05T07:10:22Z" name="Default test" finished-at="2022-06-05T07:10:26Z" duration-ms="4241">
+    <test started-at="2022-06-07T02:06:17Z" name="Default test" finished-at="2022-06-07T02:06:23Z" duration-ms="5363">
       <class name="apiChaining.EndToEndTest">
-        <test-method signature="test1()[pri:0, instance:apiChaining.EndToEndTest@4196c360]" started-at="2022-06-05T07:10:22Z" name="test1" finished-at="2022-06-05T07:10:26Z" duration-ms="4223" status="PASS">
+        <test-method signature="test1()[pri:0, instance:apiChaining.EndToEndTest@4196c360]" started-at="2022-06-07T02:06:18Z" name="test1" finished-at="2022-06-07T02:06:23Z" duration-ms="5332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
